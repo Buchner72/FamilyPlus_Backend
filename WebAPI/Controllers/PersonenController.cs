@@ -11,7 +11,7 @@ namespace WebAPI.Controllers
 {
     public class PersonenController : ApiController  //http://localhost:57375/api/personen  http://localhost:57375/swagger
     {
-        //Testnachricht
+        //Jawoll Einmal in VS2017 gestartet und es läuft auch in VS219
 
         IList<PersonN> personen = new List<PersonN>() {
                 new PersonN(){ Id=1, Vorname="Franz", Nachname="MyWebAPI",IsKind=false,PraemieFP="1,99", AdresseId=10 },
