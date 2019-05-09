@@ -11,6 +11,8 @@ namespace WebAPI.Controllers
 {
     public class PersonenController : ApiController  //http://localhost:57375/api/personen  http://localhost:57375/swagger
     {
+        //Testnachricht
+
         IList<PersonN> personen = new List<PersonN>() {
                 new PersonN(){ Id=1, Vorname="Franz", Nachname="MyWebAPI",IsKind=false,PraemieFP="1,99", AdresseId=10 },
                 new PersonN(){ Id=2, Vorname="Felix", Nachname="Buchner",IsKind=false ,PraemieFP="1,99", AdresseId=10},
