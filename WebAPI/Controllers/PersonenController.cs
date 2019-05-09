@@ -9,7 +9,7 @@ using static WebAPI.Models.Person;
 
 namespace WebAPI.Controllers
 {
-    public class PersonenController : ApiController  //http://localhost:57375/api/personen
+    public class PersonenController : ApiController  //http://localhost:57375/api/personen  http://localhost:57375/swagger
     {
         IList<PersonN> personen = new List<PersonN>() {
                 new PersonN(){ Id=1, Vorname="Franz", Nachname="MyWebAPI",IsKind=false,PraemieFP="1,99", AdresseId=10 },
