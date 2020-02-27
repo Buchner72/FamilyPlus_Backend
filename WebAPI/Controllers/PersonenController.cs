@@ -13,12 +13,12 @@ namespace WebAPI.Controllers
     {
         //Jawoll Einmal in VS2017 gestartet und es läuft auch in VS219
 
-        IList<PersonN> personen = new List<PersonN>() {
-                new PersonN(){ Id=1, Vorname="Franz", Nachname="MyWebAPI",IsKind=false,PraemieFP="1,99", AdresseId=10 },
-                new PersonN(){ Id=2, Vorname="Felix", Nachname="Buchner",IsKind=false ,PraemieFP="1,99", AdresseId=10},
-                new PersonN(){ Id=3, Vorname="Heinz", Nachname="Moser",IsKind=true,PraemieFP="1,99",  AdresseId=10},
-                new PersonN(){ Id=3, Vorname="Johann", Nachname="Scherz",IsKind=true,PraemieFP="1,99", AdresseId=10},
-                new PersonN(){ Id=4, Vorname="Ludwig", Nachname="Pirker", IsKind=true,PraemieFP="1,99", AdresseId=10}
+        IList<PersonN> personen = new List<PersonN>(){
+                new PersonN(){ Id=1, Anrede="Herr", Titel="Mag.", Vorname="Franz", Nachname="MyWebAPI", Geburtsdatum="23.05.1972", Alter=48, IsKind=false,PraemieFP="1,99", AdresseId=10 },
+                new PersonN(){ Id=2, Anrede="Herr", Titel="", Vorname="Felix", Nachname="Buchner", Geburtsdatum="23.05.1984", Alter=28, IsKind=false ,PraemieFP="1,99", AdresseId=10},
+                new PersonN(){ Id=3, Anrede="Herr", Titel="", Vorname="Heinz", Nachname="Moser", Geburtsdatum="23.05.1993" , Alter=57,  IsKind=true,PraemieFP="1,99",  AdresseId=10},
+                new PersonN(){ Id=4, Anrede="Herr", Titel="", Vorname="Johann", Nachname="Scherz",Geburtsdatum="23.05.1999", Alter=34 ,  IsKind=true,PraemieFP="1,99", AdresseId=10},
+                new PersonN(){ Id=5, Anrede="Frau", Titel="Dr.", Vorname="Carina", Nachname="Pirker", Geburtsdatum="23.05.2001", Alter=22, IsKind=true,PraemieFP="1,99", AdresseId=10}
             };
 
         [HttpGet]
